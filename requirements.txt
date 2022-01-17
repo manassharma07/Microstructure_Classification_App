@@ -1,0 +1,5 @@
+streamlit>= 0.79
+numpy==1.19.2
+matplotlib==3.5.0
+crysx_nn
+pymks
