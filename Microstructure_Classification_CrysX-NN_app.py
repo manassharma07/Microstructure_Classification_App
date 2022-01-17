@@ -82,10 +82,15 @@ st.image('microstructures_4_types-min.png')
 
 st.write('### The following is a random `100x100` pixel picture of a microstructure of one of these 4 types.')
 
-fig, ax = plt.subplots()
-ax.imshow(microstructure_data[state.rndm_indx,:,:])
-ax.set_axis_off()
-st.pyplot(fig)
+## The pyplot takes up a lot of screen
+# fig, ax = plt.subplots()
+# ax.imshow(microstructure_data[state.rndm_indx,:,:])
+# ax.set_axis_off()
+# st.pyplot(fig)
+
+# So we use matplotlib to save an image instead
+plt.imsave('processed_tensor.png',microstructure_data[state.rndm_indx,:,:], cmap='viridis')
+st.image('processed_tensor.png', width=200)
 
 st.write('### Can you guess which type is it?')
 
