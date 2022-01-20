@@ -57,7 +57,7 @@ def make_sidebar():
     st.sidebar.write('1. **Inputs**: Flattened 100x100=10,000')
     st.sidebar.write('2. **Hidden layer** of size **500** with **ReLU** activation Function')
     st.sidebar.write('3. **Output layer** of size **4** with **Softmax** activation Function')
-    st.sidebar.write('Training was done for 4 epochs with Binary Cross Entropy Loss function and a batch size of 32.')
+    st.sidebar.write('Training was done for 4 epochs with Categorical Cross Entropy Loss function using [Stochastic Gradient Descent; learning rate=0.02; batch size of 32].')
     st.sidebar.image('neural_network_visualization_25.png')
     st.sidebar.caption('Nerual Network Schematic')
 
