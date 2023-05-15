@@ -1,5 +1,5 @@
-streamlit==1.3.1
-numpy==1.19.2
-matplotlib==3.5.0
+streamlit
+numpy
+matplotlib
 crysx_nn
 pymks
